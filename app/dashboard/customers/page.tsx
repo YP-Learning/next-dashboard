@@ -1,5 +1,11 @@
-import React from "react";
+import Breadcrumbs from "@/app/ui/invoices/breadcrumbs"
 
 export default function Page() {
-    return <p>Customers Page</p>
+    return <>
+        <Breadcrumbs
+            breadcrumbs={[
+                { label: 'Customers', href: '/dashboard/customers', active: true },
+            ]}
+        />
+    </>
 }
